@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprende JavaScript Básico</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Luces de fondo -->
+  <div class="efecto-luz efecto-luz-superior"></div>
+  <div class="efecto-luz efecto-luz-inferior"></div>
+
+  <!-- Encabezado -->
+  <header class="encabezado">
+    <div class="insignia-contenedor">
+      <span class="insignia-icono">JS</span>
+      <span class="insignia-texto">Guía Interactiva 2026</span>
+    </div>
+
+    <!-- Imagen del artículo -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggkMFt_K7PtHj0OHOtumM4yWJI58fhABKE8EDpYyKjQ&s=10" alt="Aprende JavaScript" class="imagen-portada">
+
+    <h1>Aprende <span>JavaScript</span></h1>
+    <p>Los conceptos fundamentales del lenguaje explicados de forma limpia, visual e intuitiva.</p>
+
+    <!-- Navegacion rapida de temas -->
+    <nav class="navegacion-temas">
+      <a href="#variables" class="etiqueta-tema">Variables</a>
+      <a href="#funciones" class="etiqueta-tema">Funciones</a>
+      <a href="#condicionales" class="etiqueta-tema">Condicionales</a>
+      <a href="#arreglos" class="etiqueta-tema">Arreglos</a>
+      <a href="#bucles" class="etiqueta-tema">Bucles</a>
+    </nav>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <main class="contenedor-principal">
+    
+    <!-- Modulo 1: Variables -->
+    <article id="variables" class="tarjeta-modulo">
+      <div class="luz-tarjeta"></div>
+      <div class="tarjeta-encabezado">
+        <span class="numero-modulo">01</span>
+        <div>
+          <h2>Variables</h2>
+          <span class="subtitulo-modulo">Guardar datos en memoria</span>
+        </div>
+      </div>
+      <p>Una <strong>variable</strong> es un contenedor etiquetado donde guardas información para reutilizarla o modificarla en tu programa.</p>
+      
+      <div class="bloque-codigo">
+        <div class="codigo-cabecera">
+          <div class="puntos-ventana">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="nombre-archivo">app.js</span>
+          <button class="boton-copiar" title="Copiar código">Copiar</button>
+        </div>
+        <div class="codigo-cuerpo">
+          <div class="lineas-numero">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+          </div>
+          <pre><code><span class="comentario">// 'let' para valores cambiantes</span>
+<span class="palabra-clave">let</span> puntos = <span class="numero">0</span>;
+puntos = puntos + <span class="numero">10</span>;
+
+<span class="comentario">// 'const' para valores fijos</span>
+<span class="palabra-clave">const</span> usuario = <span class="cadena">"Carlos"</span>;</code></pre>
+        </div>
+      </div>
+    </article>
+
+    <!-- Modulo 2: Funciones -->
+    <article id="funciones" class="tarjeta-modulo">
+      <div class="luz-tarjeta"></div>
+      <div class="tarjeta-encabezado">
+        <span class="numero-modulo">02</span>
+        <div>
+          <h2>Funciones</h2>
+          <span class="subtitulo-modulo">Bloques reutilizables</span>
+        </div>
+      </div>
+      <p>Una <strong>función</strong> reúne un grupo de instrucciones para ejecutarlas secuencialmente cada vez que la invoques.</p>
+      
+      <div class="bloque-codigo">
+        <div class="codigo-cabecera">
+          <div class="puntos-ventana">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="nombre-archivo">app.js</span>
+          <button class="boton-copiar" title="Copiar código">Copiar</button>
+        </div>
+        <div class="codigo-cuerpo">
+          <div class="lineas-numero">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+          </div>
+          <pre><code><span class="palabra-clave">function</span> <span class="funcion">saludar</span>(nombre) {
+  <span class="palabra-clave">return</span> <span class="cadena">"¡Hola, "</span> + nombre + <span class="cadena">"!"</span>;
+}
+
+<span class="palabra-clave">let</span> msg = <span class="funcion">saludar</span>(<span class="cadena">"Ana"</span>);
+<span class="funcion">console.log</span>(msg);</code></pre>
+        </div>
+      </div>
+    </article>
+
+    <!-- Modulo 3: Condicionales -->
+    <article id="condicionales" class="tarjeta-modulo">
+      <div class="luz-tarjeta"></div>
+      <div class="tarjeta-encabezado">
+        <span class="numero-modulo">03</span>
+        <div>
+          <h2>Condicionales</h2>
+          <span class="subtitulo-modulo">Toma de decisiones</span>
+        </div>
+      </div>
+      <p>El bloque <code>if / else</code> evalúa una condición lógica para decidir qué camino debe tomar el código.</p>
+      
+      <div class="bloque-codigo">
+        <div class="codigo-cabecera">
+          <div class="puntos-ventana">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="nombre-archivo">app.js</span>
+          <button class="boton-copiar" title="Copiar código">Copiar</button>
+        </div>
+        <div class="codigo-cuerpo">
+          <div class="lineas-numero">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+          </div>
+          <pre><code><span class="palabra-clave">let</span> edad = <span class="numero">18</span>;
+
+<span class="palabra-clave">if</span> (edad >= <span class="numero">18</span>) {
+  <span class="funcion">console.log</span>(<span class="cadena">"Acceso permitido"</span>);
+} <span class="palabra-clave">else</span> {
+  <span class="funcion">console.log</span>(<span class="cadena">"Acceso denegado"</span>);
+}</code></pre>
+        </div>
+      </div>
+    </article>
+
+    <!-- Modulo 4: Arreglos -->
+    <article id="arreglos" class="tarjeta-modulo">
+      <div class="luz-tarjeta"></div>
+      <div class="tarjeta-encabezado">
+        <span class="numero-modulo">04</span>
+        <div>
+          <h2>Arrays / Arreglos</h2>
+          <span class="subtitulo-modulo">Listas estructuradas</span>
+        </div>
+      </div>
+      <p>Un <strong>Array</strong> te permite almacenar colecciones de datos en una sola variable indexada mediante corchetes <code>[]</code>.</p>
+      
+      <div class="bloque-codigo">
+        <div class="codigo-cabecera">
+          <div class="puntos-ventana">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="nombre-archivo">app.js</span>
+          <button class="boton-copiar" title="Copiar código">Copiar</button>
+        </div>
+        <div class="codigo-cuerpo">
+          <div class="lineas-numero">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+          </div>
+          <pre><code><span class="palabra-clave">let</span> frutas = [<span class="cadena">"Manzana"</span>, <span class="cadena">"Banano"</span>];
+
+<span class="comentario">// Primer elemento (índice 0)</span>
+<span class="funcion">console.log</span>(frutas[<span class="numero">0</span>]);
+
+<span class="comentario">// Añadir elemento al final</span>
+frutas.<span class="funcion">push</span>(<span class="cadena">"Uva"</span>);</code></pre>
+        </div>
+      </div>
+    </article>
+
+    <!-- Modulo 5: Bucles -->
+    <article id="bucles" class="tarjeta-modulo tarjeta-destacada">
+      <div class="luz-tarjeta"></div>
+      <div class="tarjeta-encabezado">
+        <span class="numero-modulo">05</span>
+        <div>
+          <h2>Bucles / Ciclos</h2>
+          <span class="subtitulo-modulo">Repetición automatizada</span>
+        </div>
+      </div>
+      <p>El bucle <code>for</code> ejecuta un bloque de instrucciones de forma repetitiva mientras se cumpla una condición.</p>
+      
+      <div class="bloque-codigo">
+        <div class="codigo-cabecera">
+          <div class="puntos-ventana">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="nombre-archivo">app.js</span>
+          <button class="boton-copiar" title="Copiar código">Copiar</button>
+        </div>
+        <div class="codigo-cuerpo">
+          <div class="lineas-numero">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
+          </div>
+          <pre><code><span class="comentario">// Bucle simple del 1 al 3</span>
+<span class="palabra-clave">for</span> (<span class="palabra-clave">let</span> i = <span class="numero">1</span>; i <= <span class="numero">3</span>; i++) {
+  <span class="funcion">console.log</span>(<span class="cadena">"Número: "</span> + i);
+}
+
+<span class="comentario">// Recorrer un arreglo</span>
+<span class="palabra-clave">let</span> amigos = [<span class="cadena">"Juan"</span>, <span class="cadena">"María"</span>, <span class="cadena">"Pedro"</span>];
+<span class="palabra-clave">for</span> (<span class="palabra-clave">let</span> i = <span class="numero">0</span>; i < amigos.length; i++) {
+  <span class="funcion">console.log</span>(<span class="cadena">"Hola, "</span> + amigos[i]);
+}</code></pre>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Pie de pagina -->
+  <footer class="pie-pagina">
+    <div class="pie-contenido">
+      <p>Presiona <kbd>F12</kbd> o <kbd>Ctrl + Shift + I</kbd> para abrir la consola de tu navegador y ejecutar <code>app.js</code>.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
